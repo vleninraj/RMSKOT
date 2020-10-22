@@ -11,9 +11,11 @@ namespace RMSKOT
 {
     public partial class Form1 : Form
     {
+        #region Constructor
         public Form1()
         {
             InitializeComponent();
         }
+        #endregion
     }
 }
