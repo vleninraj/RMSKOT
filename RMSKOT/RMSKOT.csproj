@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,76 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseForms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ClsVoucher.cs" />
+    <Compile Include="Classes\Common.cs" />
+    <Compile Include="Classes\DbHelper.cs" />
+    <Compile Include="Classes\Delegates.cs" />
+    <Compile Include="Classes\SearchClass.cs" />
+    <Compile Include="Classes\StringExtention.cs" />
+    <Compile Include="Controls\atExButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\atGradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\atGradientPanel.Designer.cs">
+      <DependentUpon>atGradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\atPOSButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumKeyBoardPOS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\NumKeyBoardPOS.Designer.cs">
+      <DependentUpon>NumKeyBoardPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PaggedPannel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PaggedPannel.designer.cs">
+      <DependentUpon>PaggedPannel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SkyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyFlatButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyFlatButton.Designer.cs">
+      <DependentUpon>SkyFlatButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SkyGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyPanel.cs" />
+    <Compile Include="Controls\SkyRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SkyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +125,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseForms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumKeyBoardPOS.ar-QA.resx">
+      <DependentUpon>NumKeyBoardPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumKeyBoardPOS.resx">
+      <DependentUpon>NumKeyBoardPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PaggedPannel.resx">
+      <DependentUpon>PaggedPannel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SkyFlatButton.resx">
+      <DependentUpon>SkyFlatButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -61,6 +149,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
