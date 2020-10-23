@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Forms;
 namespace RMSKOT
 {
-    public class POS
+    public class SkyPanel:Panel
     {
     }
 }

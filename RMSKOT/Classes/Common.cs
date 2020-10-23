@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 namespace RMSKOT
 {
@@ -12,6 +13,7 @@ namespace RMSKOT
     {
         public static string UserName { get; set; }
         public static string UserID { get; set; }
+        public static bool isLogin { get; set; }
         public static bool blnUnit { get; set; }
         public static bool blnUnitWiseRate { get; set; }
         public static bool blnFree { get; set; }
