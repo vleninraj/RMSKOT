@@ -148,7 +148,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.touchableFlowLayoutPanel1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 48);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -173,7 +173,7 @@
             // 
             // btnSalesOrder
             // 
-            this.btnSalesOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(52)))));
+            this.btnSalesOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnSalesOrder.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnSalesOrder.FlatAppearance.BorderSize = 0;
             this.btnSalesOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -186,13 +186,14 @@
             this.btnSalesOrder.Name = "btnSalesOrder";
             this.btnSalesOrder.Size = new System.Drawing.Size(175, 64);
             this.btnSalesOrder.TabIndex = 43;
-            this.btnSalesOrder.Text = "Sales Order";
+            this.btnSalesOrder.Text = "Order";
             this.btnSalesOrder.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnSalesOrder.UseVisualStyleBackColor = false;
+            this.btnSalesOrder.Click += new System.EventHandler(this.btnSalesOrder_Click);
             // 
             // btnSettings
             // 
-            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(52)))));
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnSettings.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -211,7 +212,7 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(137)))), ((int)(((byte)(52)))));
+            this.btnLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.LightGray;
             this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

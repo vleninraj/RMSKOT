@@ -20,6 +20,7 @@ namespace RMSKOT
             {
                 DbHelper.sConnectionstring = "server=" + Properties.Settings.Default.ServerName + ";uid=root;pwd=root;database=" + Properties.Settings.Default.DatabaseName + ";Max Pool Size=1000";
             }
+            DoubleBuffered = true;
         }
         private void PopulateUsers()
         {
@@ -40,7 +41,7 @@ namespace RMSKOT
         private void AddUserButton(DataRow row)
         {
             atGradientPanel btnItem = new atGradientPanel();
-            btnItem.BackColor = Color.FromArgb(1, 137, 52);
+            btnItem.BackColor = Color.FromArgb(0, 122, 204);
             btnItem.ForeColor = Color.White;
             btnItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             btnItem.Font = new Font("Open Sans", 12, FontStyle.Bold);

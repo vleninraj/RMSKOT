@@ -22,6 +22,7 @@ namespace RMSKOT
         public static string Email { get; set; }
         public static string EmailPassword { get; set; }
         public static string CurrencyCode { get; set; }
+        public static string usrDefaultSalesType { get; set; }
         public static string getCardTypeNameFromCode(string Code)
         {
             string sql = "SELECT Name FROM creditcards WHERE Code='" + Code + "'";

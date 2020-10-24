@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+using RMSKOT.Forms;
 namespace RMSKOT
 {
     public partial class MainView : Form
@@ -15,7 +15,7 @@ namespace RMSKOT
         {
             InitializeComponent();
             EnableControls(false);
-            
+            DoubleBuffered = true;
         }
         private void EnableControls(bool blnEnable)
         {
@@ -90,6 +90,15 @@ namespace RMSKOT
         private void tmr1_Tick(object sender, EventArgs e)
         {
             lbltime.Text = DateTime.Now.ToString();
+        }
+
+        private void btnSalesOrder_Click(object sender, EventArgs e)
+        {
+            TableView frm = new TableView();
+            if(frm.ShowDialog()==DialogResult.OK)
+            {
+
+            }
         }
     }
 }

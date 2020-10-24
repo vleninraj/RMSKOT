@@ -106,5 +106,17 @@ namespace RMSKOT.Properties {
                 this["Prefix"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string RMSType {
+            get {
+                return ((string)(this["RMSType"]));
+            }
+            set {
+                this["RMSType"] = value;
+            }
+        }
     }
 }

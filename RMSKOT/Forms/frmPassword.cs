@@ -17,7 +17,12 @@ namespace RMSKOT
             drow = _drow;
             lblCap.Text = "Enter Password For User :" + drow["UserId"].ToString();
         }
+        private void LoadUserSettings()
+        {
 
+            Common.usrDefaultSalesType = "";
+
+        }
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (drow["UserPassword"].ToString().Trim() == txtPasswordbasic.Text.Trim())
@@ -25,6 +30,7 @@ namespace RMSKOT
                 Common.isLogin = true;
                 Common.UserID = drow["EmpId"].ToString();
                 Common.UserName = drow["UserId"].ToString();
+                LoadUserSettings();
                 this.DialogResult = DialogResult.OK;
             }
             else
